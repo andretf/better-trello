@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         better-trello
 // @namespace    https://github.com/andretf/better-trello
-// @version      0.1.0
+// @version      0.2.0
 // @description  Userscript to improve Trello user experience
 // @author       Andre Figueiredo
 // @match        https://trello.com/b/oMbuK9ki/greencents
