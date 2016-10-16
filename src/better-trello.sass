@@ -7,14 +7,24 @@
   &:first-child
     margin-left: 0.1%
 
-.list-cards
-  margin: 0
-  padding: 0 2%
+.list
+  box-shadow: -2px 2px 7px 0 rgba(0,0,0,.6)
 
-.list-card 
-  border-bottom: 0
-  box-shadow: -2px 2px 5px 0 #888
+.list-cards
+  background-color: #fefefe
+  border-bottom: 1px solid #ccc
+  border-top: 1px solid #ccc
+  margin: 0
+  padding: 5px 2% 0 2%
+
+.list-card
+  border: 1px solid rgba(0,0,0,.3)
+  border-radius: 4px
+  box-shadow: -2px 2px 6px 0 rgba(0,0,0,.4)
   margin-bottom: 8px
+
+.list-card-title
+  padding-top: 5px
 
 // Colorize
 @mixin occupy-whole
@@ -38,9 +48,10 @@
     width: auto
 
 // Jira tickets
-.ticket-title 
+.ticket-title
+  display: block
   opacity: .8
-  @media (max-width: 1200px)
+  @media (max-width: 1999px)
     display: none
 
 .list-card-details 
