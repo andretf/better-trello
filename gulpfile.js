@@ -35,10 +35,12 @@ gulp.task('sass:watch', function(){
   gulp.watch('./src/*.sass', ['sass']);
 });
 
-gulp.task('default', ['lint'], function () {
+gulp.task('build', ['lint', 'sass'], function () {
   return gulp.src(source)
     .pipe(rename(dist))
     .pipe(uglify({ preserveComments: 'all' }))
     .pipe(size())
     .pipe(gulp.dest('./'));
 });
+
+gulp.task('default', ['build']);
